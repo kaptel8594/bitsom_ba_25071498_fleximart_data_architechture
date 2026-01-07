@@ -1,0 +1,43 @@
+# DATA QUALITY REPORT
+
+ETL Pipeline: FlexiMart
+
+
+---
+
+## FILE: customers_raw.csv
+
+Total records processed       : 25
+Duplicate records removed     : 1
+Missing values handled        : 5 (missing emails filled with defaults)
+Records loaded successfully   : 24
+
+---
+
+## FILE: products_raw.csv
+
+Total records processed       : 15
+Duplicate records removed     : 0
+Missing values handled        : 6 (price/stock filled with defaults)
+Records loaded successfully   : 15
+
+---
+
+## FILE: sales_raw.csv
+
+Total records processed       : 30
+Duplicate records removed     : 2
+Missing values handled        : 4 (quantity/amount defaults, invalid FKs dropped)
+Records loaded successfully   : 28
+
+---
+
+## OVERALL SUMMARY
+
+Total files processed         : 3
+Total records processed       : 70
+Total duplicates removed      : 3
+Total missing values handled  : 15
+Total records loaded          : 67
+
+STATUS: ETL completed successfully with data quality checks applied.
